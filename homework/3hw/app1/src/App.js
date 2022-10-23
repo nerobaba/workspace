@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from 'react'
 import './App.css'
+import VlogList from './components/VlogList'
 // import VlogList from './VlogList'
 
 export default function App () {
   // JS
-  const [vlog, setVlog] = useState([])
+  const [vlogs, setVlog] = useState([])
 
     
 
@@ -14,27 +15,16 @@ export default function App () {
       .then((json) => { setVlog(json)})
   }, [])
 
+  console.log('vlogs: ', vlogs)
 
-  const render = vlog.map((item) => {
 
-    
-    
-    return(
-      <div key = {item.id}>
-        <a href ='/'>{item.title}</a>
-        <p>{item.body}</p>
-              
-              
-      </div>
-      )
-    })
   
     
   // XML
   return (
     <div>
       Hello React!
-      {render}
+      <VlogList vlogs={vlogs}/>
     </div>
   )
 }

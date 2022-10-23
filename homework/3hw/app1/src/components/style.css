@@ -1,0 +1,6 @@
+.vlog{
+    border: 1px solid #ccc;
+}
+.vlog:hover{
+    background-color: pink;
+}
