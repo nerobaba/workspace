@@ -5,7 +5,7 @@ import MovieList from './components/MovieList';
 export default function App () {
   // JS
   const [movies, setMovies] = useState([])
-
+  
   useEffect(() => {
     fetch('https://yts.mx/api/v2/list_movies.json?sort_by=rating')
       .then((res) => { return res.json()})

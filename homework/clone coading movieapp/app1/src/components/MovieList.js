@@ -3,7 +3,7 @@ import './MovieList.css'
 
 export default function MovieList ({ movies }){
 
-    console.log(movies)
+    console.log(movies,"hello")
 
     const render = movies.map((item) => {
         const movieRankClass = item.rating === 0 ?
