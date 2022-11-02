@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+}
+
+.movieRankGood {
+  color: blue;
+}
+
+.movieRankSoso {
+  color: orange;
+}
+
+.movieRankBad {
+  color: red;
+}
+
+.movieRankNone {
+  color: gray;
+}
